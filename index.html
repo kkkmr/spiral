@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="style768.css">
+    <link rel="stylesheet" href="style360.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header-section">
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+            <div class="navbar-container">
+                <div class="logo">
+                    <img src="assets/header/logo.svg" alt="Get an intervention logo"/>
+                </div>
+                <button class="menu-toggle" aria-label="Toggle Navigation" onclick="toggleMenu()" aria-expanded="false">☰</button>
+                <ul class="nav-links" role="list">
+                    <li><a href="#" onclick="return false;" role="listitem">HOME</a></li>
+                    <li><a href="#" onclick="return false;" role="listitem">ABOUT</a></li>
+                    <li><a href="#" onclick="return false;" role="listitem">CONTACT</a></li>
+                    <li><a href="#" onclick="return false;" role="listitem">|</a></li>
+                    <li><a href="#" onclick="return false;" role="listitem">CALL NOW FOR A CONSULT <span class="phone-number">123.456.7890</span></a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="header-info-container">
+            <div class="header-info">
+                    <picture>
+                        <source media="(max-width:360px)" srcset="assets/header/360/GET_AN_INTERVENTION360.svg">
+                        <source media="(min-width:361px) and (max-width:768px) " srcset="assets/header/768/GET_AN_INTERVENTION768.svg">
+                        <img src="assets/header/1440/GET_AN_INTERVENTION.svg" alt=""/>
+                    </picture>
+                <span>
+                    Showing greater respect to older adults can be done in several ways : 
+                    acknowledging and putting to use the talents and skills of older adults; creating 
+                    intergenerational initiatives; and allowing older adults to stay active and independent 
+                    for as long as possible.
+                </span>
+            </div>
+            <div class="contact">
+                <form class="form-container">
+                    <div class="form-header">Contact Us</div>
+                    <div class="input-firstname">
+                        <input type="text" id="firstname" placeholder="First name" required>
+                        <!-- <label for="name">First Name</label> -->
+                    </div>
+                    <div class="input-lastname">
+                        <input type="text" id="lastname" placeholder="Last name" required>
+                        <!-- <label for="name">First Name</label> -->
+                    </div>
+                    <div class="input-email">
+                        <input type="email" id="email" placeholder="Business Email" required>
+                        <!-- <label for="name">First Name</label> -->
+                    </div>
+                    <div class="input-company">
+                        <input type="text" id="company" placeholder="Company" required>
+                        <!-- <label for="name">First Name</label> -->
+                    </div>
+                    <div class="input-country">
+                        <select>
+                            <option selected>Country</option>
+                            <option>Australia</option>
+                            <option>Japan</option>
+                            <option>Indonesia</option>
+
+                        </select>
+                    </div>
+                    <div class="input-submit">
+                        <button>
+                            <img src=assets/header/submit_arrow.svg/ alt="Submit arrow">
+                            <span>Submit</span></button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+        <div class="header-edge">
+            <picture class="image1">
+                <source media="(max-width:360px)" srcset="assets/header/360/overlap360_1.svg">
+                <source media="(min-width:361px) and (max-width:768px) " srcset="assets/header/768/overlap768_1.svg">
+                <img src="assets/header/1440/overlap.svg" alt=""/></span>
+            </picture>
+            <picture class="image2">
+                <source media="(max-width:360px)" srcset="assets/header/360/overlap360_2.svg">
+                <source media="(min-width:361px) and (max-width:768px) " srcset="assets/header/768/overlap768_2.svg">
+                <img src="assets/header/1440/overlap1.svg" alt=""/></span>
+            </picture>
+            <!-- <img src="assets/overlap.svg" alt="" class="image1"> -->
+            <!-- <img src="assets/overlap1.svg" alt="" class="image2"> -->
+        </div>
+    </header>
+    
+    <div>
+        images
+    </div>
+    <div>
+        we understand
+    </div>
+    <div>
+        carousel
+    </div>
+    <div>
+        organize
+    </div>
+    <div>
+        video
+    </div>
+    <footer>
+
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>

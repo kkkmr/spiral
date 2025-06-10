@@ -1,0 +1,52 @@
+@media screen and (max-width:768px) {
+
+    .header-section{
+        background-image: url("assets/header/768/header768.svg");
+        background-size: cover; /* Ensures the image covers the entire area */
+        background-position: center; /* Centers the image */
+        background-repeat: no-repeat; /* Prevents tiling */
+        gap:5em;
+    }
+
+    .header-info-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        line-height: 2em;
+        gap:1em;
+        margin-bottom: 8vh;
+        padding: 0em 2em;
+    }
+
+    .contact{
+        width: 70%;
+        margin-bottom: 7em;
+        padding:4em 2em 2em 2em;
+        height: unset;
+
+        .input-submit{
+            width: 50%;
+            button{
+                width: 100%;
+            }
+        }
+    }
+
+    .header-edge{
+            position: absolute;
+            width:100%;
+            bottom: -0.3em;
+            .image1{
+                position: absolute;
+                bottom:0em;
+                width:100%;
+
+            }
+            .image2{
+                position: absolute;
+                bottom:0em;
+                width: 100%;
+            }
+        }
+}
