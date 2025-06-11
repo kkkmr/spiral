@@ -6,34 +6,33 @@
         background-position: center; /* Centers the image */
         background-repeat: no-repeat; /* Prevents tiling */
         gap:5em;
-    }
 
-    .header-info-container{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        line-height: 2em;
-        gap:1em;
-        margin-bottom: 8vh;
-        padding: 0em 2em;
-    }
+        .header-info-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            line-height: 2em;
+            gap:1em;
+            margin-bottom: 8vh;
+            padding: 0em 2em;
 
-    .contact{
-        width: 70%;
-        margin-bottom: 7em;
-        padding:4em 2em 2em 2em;
-        height: unset;
+                .contact{
+                width: 70%;
+                margin-bottom: 7em;
+                padding:4em 2em 2em 2em;
+                height: unset;
 
-        .input-submit{
-            width: 50%;
-            button{
-                width: 100%;
+                .input-submit{
+                    width: 50%;
+                    button{
+                        width: 100%;
+                    }
+                }
             }
         }
-    }
 
-    .header-edge{
+        .header-edge{
             position: absolute;
             width:100%;
             bottom: -0.3em;
@@ -49,4 +48,38 @@
                 width: 100%;
             }
         }
+    }
+
+    .understand-section{
+        padding:2vh 2vw;
+
+        .understand-content-2{
+
+            display: flex;
+            flex-direction: row;
+            gap: 2.5em;
+            p{
+                line-height: 1.75em;
+                flex: 1;
+
+                .success-btn{
+                    width: 100%;
+                    border: 2px solid rgba(91, 200, 175, 1);
+                    background: white;
+                    font-weight: var(--sp-font-weight-semi-bold);
+                    font-size: var(--sp-font-size-large);
+                    color:rgba(91, 200, 175, 1);
+                    padding:1em;
+                    margin-top:1em;
+                    border-radius: 0.25em;
+                }
+            }
+        }
+
+        .understand-content-1{
+            display: none;
+        }
+    }
+    
+
 }

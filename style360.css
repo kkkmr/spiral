@@ -65,5 +65,29 @@
                 width: 100%;
             }
         }
-    }    
+    } 
+    
+    .understand-section{
+
+        padding:1em;
+
+        .understand-images{
+            display: none;
+        }
+
+        .understand-title{
+            padding:unset;
+        }
+
+        .understand-content-1{
+            display: flex;
+            padding-top:2em;
+            flex-direction: column;
+            gap:1em;
+        }
+
+        .understand-content-2{
+            display: none;
+        }
+    }
 }

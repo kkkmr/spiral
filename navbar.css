@@ -74,6 +74,10 @@
         top:3em;
         right:1em;
     }
+
+    .navbar{
+        padding:unset;
+    }
 }
 /* 💡 **Responsive Navbar for Mobile View** */
 @media screen and (max-width: 360px) {
@@ -102,5 +106,9 @@
 
     .menu-toggle {
         display: block; /* Show menu button in mobile */
+    }
+
+    .navbar{
+        padding:unset;
     }
 }
