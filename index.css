@@ -31,7 +31,6 @@
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: var(--sp-font-size-normal);
-    background-color: #F5F5F5;
 }
 
 .header-section{
@@ -179,6 +178,7 @@ body {
     flex-direction: column;
     padding:5vh 8vw;
     position: relative;
+    background-color: #F5F5F5;
 
     .understand-images{
         display: flex;

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="carousel.css">
     <link rel="stylesheet" href="style768.css">
     <link rel="stylesheet" href="style360.css">
     <title>Document</title>
@@ -88,11 +89,9 @@
                 <source media="(min-width:361px) and (max-width:768px) " srcset="./assets/header/768/overlap768_2.svg">
                 <img src="./assets/header/1440/overlap1.svg" alt=""/></span>
             </picture>
-            <!-- <img src="assets/overlap.svg" alt="" class="image1"> -->
-            <!-- <img src="assets/overlap1.svg" alt="" class="image2"> -->
         </div>
     </header>
-    <div class="understand-section">
+    <section class="understand-section">
         <div class="understand-images">
             <div>
                 <picture>
@@ -169,13 +168,67 @@
                 </span>
             </p> 
         </div>
-    </div>
-    <div>
-        we understand
-    </div>
-    <div>
-        carousel
-    </div>
+    </section>
+    <section class="carousel-section">
+        <div class="carousel-container">
+            <div class="carousel-item">
+                <div class="carousel-img"> 
+                    <img src="assets/carousel/carousel1.svg" alt=""/>
+                </div>
+                <div class="carousel-info">
+                    <div class="carousel-title">
+                        <span>Abbie Harvey</span>
+                        <img src="assets/carousel/quote.svg" alt="">
+                    </div>
+                    <p>
+                        I have been caring for my mom & dad off and on for about 10 years now, and I know the importance 
+                        of me being there for appointments. Older people need attention, love and care that they truly 
+                        deserve.
+                    </p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-img"> 
+                    <img src="assets/carousel/carousel2.svg" alt=""/>
+                </div>
+                <div class="carousel-info">
+                    <div class="carousel-title">
+                        <span>Abbie Harvey</span>
+                        <img src="assets/carousel/quote.svg" alt="">
+                    </div>
+                    <p>
+                        I have been caring for my mom & dad off and on for about 10 years now, and I know the importance 
+                        of me being there for appointments. Older people need attention, love and care that they truly 
+                        deserve.
+                    </p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-img"> 
+                    <img src="assets/carousel/carousel3.svg" alt=""/>
+                </div>
+                <div class="carousel-info">
+                    <div class="carousel-title">
+                        <span>Abbie Harvey</span>
+                        <img src="assets/carousel/quote.svg" alt="">
+                    </div>
+                    <p>
+                        I have been caring for my mom & dad off and on for about 10 years now, and I know the importance 
+                        of me being there for appointments. Older people need attention, love and care that they truly 
+                        deserve.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+
+        <div class="dots">
+            <span class="dot" onclick="goToSlide(0)"></span>
+            <span class="dot" onclick="goToSlide(1)"></span>
+            <span class="dot" onclick="goToSlide(2)"></span>
+        </div>
+    </section>
     <div>
         organize
     </div>

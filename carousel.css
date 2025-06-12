@@ -1,0 +1,193 @@
+.carousel-section {
+  position: relative;
+  overflow: hidden;
+  padding: 5vh;
+  background: linear-gradient(to bottom, #F5F5F5 20%, white 20% 100%);
+
+  .carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+        .carousel-item {
+            min-width: 100%;
+            text-align: center;
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: 1fr 3fr;
+            gap:1em;
+            padding: 0vh 12vw;
+            color: black;
+            font-size: var(--sp-font-size-large);
+            .carousel-info{
+                background: rgba(25, 77, 68, 1);
+                box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.12);
+
+            }
+
+            .carousel-img{
+                width: 100%;
+                grid-row: 1;
+                grid-column: 1/ span 1;
+                /* flex: 3; */
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-top-left-radius: 1em;
+                    border-bottom-left-radius: 1em;
+                }
+            }
+
+            .carousel-info{
+                /* flex:7; */
+                grid-row: 1;
+                grid-column: 2/ span 1;
+                display: flex;
+                gap:1em;
+                flex-direction: column;
+                justify-content: center;
+                color:white;
+                padding:1em 4em;
+                border-top-right-radius: 1em;
+                border-bottom-right-radius: 1em;
+
+                .carousel-title{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: baseline;
+                    font-size: 24px;
+                    line-height: 34px;
+                    font-weight: 700;
+                }
+                
+                p{
+                    font-size: 18px;
+                    line-height: 28px;
+                    font-style: italic;
+                    text-align: left;
+                }
+            }
+
+            
+        }
+    }
+
+    button {
+        position: absolute;
+        top: 40%;
+        transform: translateY(-50%);
+        background:transparent;
+        color: rgba(234, 234, 234, 1);
+        border: none;
+        cursor: pointer;
+        font-size: 3em;
+        display: inline-block;
+    }
+
+    .prev { left: 8vw; }
+    .next { right: 8vw; }
+
+    
+    .dots {
+        text-align: center;
+        margin-top: 3vh;
+    }
+
+    .dot {
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        margin: 0.75em;
+        background-color: #bbb;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .dot.active {
+        background: rgba(91, 200, 175, 1);
+    }
+}
+
+
+@media screen and (max-width:768px) {
+
+    .carousel-section{
+
+        padding:5vh 0vw;
+
+        .carousel-container{
+            .carousel-item{
+                 padding:0vh 3vw;
+
+                 .carousel-info{
+                    gap: 0.5em;
+                    padding:1em 4vw;
+                    .carousel-title{
+                        font-size: 18px;
+                        font-weight: 700;
+                        img{
+                            width: 10%;
+                            height: 90%;
+                        }
+                    }
+                    p{
+                        font-size: 14px;
+                        line-height: 24px;
+                    }
+                 }
+            }
+        }
+        button{
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width:360px) {
+
+    .carousel-section{
+
+        padding:10vh 0vw;
+
+        .carousel-container{
+            .carousel-item{
+                 display: unset;
+                 position: relative;
+                 margin-top: 8vh;
+
+                 .carousel-info{
+                    border-radius: 1em;
+                    margin-top:2vh;
+                    padding:15vh 8vw 8vh 8vw;
+
+                    .carousel-title{
+                        img{
+                            position: absolute;
+                            top:8.5vh;
+                            width: unset;
+                            height: unset;
+                            right: 16vw;
+                            border-top-right-radius: 1em;
+                            border-top-left-radius: 1em;
+                        }
+                    }
+                 }
+
+                .carousel-img{
+                    position: absolute;
+                    top:-9vh;
+                    left:8vw;
+                    width: 50%;
+                    height: 50%;
+                    img{
+                        object-fit: contain;
+
+                    }
+                    
+                }
+            }
+        }
+        button{
+            display: none;
+        }
+    }
+}
