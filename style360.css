@@ -70,6 +70,7 @@
     .understand-section{
 
         padding:1em;
+        background-color: white;
 
         .understand-images{
             display: none;
