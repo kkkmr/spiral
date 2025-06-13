@@ -81,5 +81,22 @@
         }
     }
     
+    .organize-section{
+        padding:0vh 3vw 2vh 3vw;
+        .organize-content-1{
+            margin-bottom:10vh;
+        }
 
+        .organize-content-2{
+            display: grid;
+            column-gap: 3vw;
+            row-gap: 3vh;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+
+            .tooltip-text{
+                width: 40vw;
+            }
+        }
+    }
 }
