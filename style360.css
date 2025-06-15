@@ -116,4 +116,34 @@
             }
         }
     }
+
+    .video-section{
+        
+        .video-info{
+            padding:11vh 3vw 17vh 3vw;
+
+           .video-info-content{
+           
+            div span{
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 24px;
+            }
+            p{
+                font-size: 14px;
+                line-height: 24px;
+                margin-left: 8vw;
+                margin-top:1vh;
+                color: rgba(255, 255, 255, 0.8);
+                width: 90%;
+            }
+        }
+        }
+    }
+
+    .footer-section{
+        font-size: 12px;
+        line-height: 22px;
+        padding: 2em 1em;
+    }
 }
