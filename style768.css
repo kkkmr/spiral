@@ -161,6 +161,11 @@
             width: 100%;
             right: 0em;
         }
+
+        .video-player{
+            left:35%;
+            top:85%;
+        }
     }
 
     .footer-section{

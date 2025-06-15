@@ -423,19 +423,29 @@ body {
     }
 
     .video-player{
-        background: rgba(255, 255, 255, 0.2);
         position: absolute;
-        left:70vw;
-        top:20vh;
-        .play-img{
-            position: absolute;
-            /* top:0vh; */
-            /* left:20vw; */
-            z-index: 66;
+        left:70%;
+        top:35%;
+        border: 2px solid rgba(255, 255, 255, 0.3);
+        background-color: rgba(91, 200, 175, 0.1);
+        border-radius: 50%;
+        transition: transform 0.3s ease-in-out, border-width 0.3s ease-in-out;
+        z-index: 5;
+        &:hover{
+             transform: scale(1.1);
+
+             .play-img {
+                transform: scale(0.8);
+            }
+        }
+
+        .play-img {
+            transition: transform 0.3s ease-in-out;
+            width: 14.5em;
+            height: 14.5em;
         }
     }
 }
-
 .footer-section{
     background: rgba(234, 234, 234, 1);
     color: rgba(117, 117, 117, 1);

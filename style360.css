@@ -120,7 +120,7 @@
     .video-section{
         
         .video-info{
-            padding:11vh 3vw 17vh 3vw;
+            padding:10vh 3vw 17vh 3vw;
 
            .video-info-content{
            
@@ -138,6 +138,17 @@
                 width: 90%;
             }
         }
+        }
+
+        .video-player{
+            left:35%;
+            top:92%;
+           
+            .play-img {
+                transition: transform 0.3s ease-in-out;
+                width: 7em;
+                height: 7em;
+            }
         }
     }
 
