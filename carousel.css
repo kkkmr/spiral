@@ -74,13 +74,13 @@
         background:transparent;
         color: rgba(234, 234, 234, 1);
         border: none;
-        cursor: pointer;
         font-size: 3em;
         display: inline-block;
 
-        &:hover,
-        &:active{
+        &:hover:not([disabled]),
+        &:active:not([disabled]){
             color: rgba(91, 200, 175, 1);
+            cursor: pointer;
         }
     }
 
@@ -183,6 +183,8 @@
                     height: 50%;
                     img{
                         object-fit: contain;
+                        border-top-left-radius: unset;
+                        border-bottom-left-radius: unset;
                     }
                 }
             }

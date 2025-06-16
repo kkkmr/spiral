@@ -1,7 +1,7 @@
 @media screen and (max-width:768px) {
 
     .header-section{
-        background-image: url("assets/header/768/header768.svg");
+        background-image: url("assets/header/768/header768.png");
         background-size: cover; /* Ensures the image covers the entire area */
         background-position: center; /* Centers the image */
         background-repeat: no-repeat; /* Prevents tiling */

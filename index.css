@@ -34,7 +34,7 @@ body {
 }
 
 .header-section{
-    background-image: url("assets/header/1440/header.svg");
+    background-image: url("assets/header/1440/header.png");
     background-size: cover; /* Ensures the image covers the entire area */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents tiling */
