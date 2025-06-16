@@ -77,6 +77,11 @@
         cursor: pointer;
         font-size: 3em;
         display: inline-block;
+
+        &:hover,
+        &:active{
+            color: rgba(91, 200, 175, 1);
+        }
     }
 
     .prev { left: 8vw; }
@@ -113,6 +118,7 @@
         .carousel-container{
             .carousel-item{
                  padding:0vh 3vw;
+                 gap:1.5em;
 
                  .carousel-info{
                     gap: 0.5em;
@@ -149,6 +155,7 @@
                  display: unset;
                  position: relative;
                  margin-top: 8vh;
+                 padding:0vh 5vw;
 
                  .carousel-info{
                     border-radius: 1em;

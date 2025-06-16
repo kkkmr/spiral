@@ -17,16 +17,46 @@
             margin-bottom: 8vh;
             padding: 0em 2em;
 
+                .header-info{
+                    align-self: center;
+
+                    img{
+                        width: 60%;
+                    }
+                    span{
+                        width: 90%;
+                        align-self: anchor-center;
+                        color: rgba(255, 255, 255, 0.8);
+                        font-size: 18px;
+                        line-height:28px;
+                    }
+                }
+
                 .contact{
                 width: 70%;
                 margin-bottom: 7em;
                 padding:4em 2em 2em 2em;
                 height: unset;
 
-                .input-submit{
-                    width: 50%;
-                    button{
-                        width: 100%;
+                .form-container{
+
+                    .input-submit{
+                        width: 50%;
+                        button{
+                            width: 100%;
+                        }
+                    }
+
+                    label {
+                        left: 12px;
+                        top: 25%;
+                        padding: 0em 0.4em;
+                    }
+
+                    /* Move label up when input is focused or has text */
+                    input:focus + label,
+                    input:valid + label {
+                        top: -20%;
                     }
                 }
             }
@@ -168,11 +198,9 @@
         }
 
         .video-player{
-            left:35%;
+            left:35vw;
             top:85%;
         }
-
-        
     }
 
     .footer-section{

@@ -12,15 +12,24 @@
         padding-bottom:5em;
 
         .navbar-container{
-            padding:1em;
+            padding:1em 5vw;
         }
 
         .header-info-container{
             gap:1em;
-            padding:0em 1em;
+            padding:0em 5vw;
             margin-bottom: unset;
             .header-info{
                 width: 100%;
+                line-height: 24px;
+
+                img{
+                    width: unset;
+                }
+
+                span{
+                    width: unset;
+                }
             }
             .contact{
                 padding:4em 2em;
@@ -30,7 +39,7 @@
                 .form-container{
                     display: flex;
                     flex-direction: column;
-                    gap:1em;
+                    gap:1.5em;
 
                     input,select{
                         height: 4em;
@@ -45,6 +54,18 @@
                         width: 100%;
                         height: 2.5em;
                         margin-top: 1em;
+                    }
+
+                    label {
+                        left: 12px;
+                        top: 30%;
+                        padding: 0em 0.4em;
+                    }
+
+                    /* Move label up when input is focused or has text */
+                    input:focus + label,
+                    input:valid + label {
+                        top: -20%;
                     }
                 }
             }
@@ -69,7 +90,7 @@
     
     .understand-section{
 
-        padding:1em;
+        padding:5vw;
         background-color: white;
 
         .understand-images{
@@ -94,10 +115,16 @@
     }
 
     .organize-section{
-        padding:0vh 3vw 2vh 3vw;
+        padding:0vh 5vw 2vh 5vw;
         .organize-content-1{
+            display: flex;
             flex-direction: column;
             margin-bottom:10vh;
+            gap:3em;
+
+            p:nth-child(1){
+                line-height: 1.5em;
+            }
         }
 
         .organize-content-2{
@@ -120,7 +147,7 @@
     .video-section{
         
         .video-info{
-            padding:10vh 3vw 17vh 3vw;
+            padding:10vh 5vw 17vh 5vw;
 
            .video-info-content{
            
@@ -141,7 +168,7 @@
         }
 
         .video-player{
-            left:35%;
+            left:35vw;
             top:92%;
            
             .play-img {

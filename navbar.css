@@ -82,20 +82,21 @@
 /* 💡 **Responsive Navbar for Mobile View** */
 @media screen and (max-width: 360px) {
     .nav-links {
-        display: none;
         flex-direction: column;
         position: absolute;
         gap:0.1em;
         top: 4em;
-        right: 2em;
-        background-color: #5BC8AF;
-        width: 80%;
+        left:0em;
+        background:  rgba(25, 77, 65, 1);
+        width: 100%;
         text-align: center;
-        z-index: 1;
+        transform: rotateX(90deg); /* Menu starts rotated (hidden) */
+        transform-origin: top;
+        transition: transform 0.5s ease-in-out;
     }
 
     .nav-links.show {
-        display: flex;
+        transform: rotateX(0deg);
     }
 
     li:nth-child(5){
