@@ -83,10 +83,14 @@
     
     .organize-section{
         padding:0vh 3vw 2vh 3vw;
+
+        .organize-title{
+            padding:1em 0em;
+        }
         .organize-content-1{
             display: grid;
             grid-template-columns: 1fr 1fr;
-            margin-bottom:10vh;
+            margin-bottom:5em;
             row-gap: 1vh;
             column-gap:2vh;
             width: 100%;

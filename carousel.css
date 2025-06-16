@@ -108,7 +108,7 @@
 
     .carousel-section{
 
-        padding:5vh 0vw;
+        padding:2em 0vw;
 
         .carousel-container{
             .carousel-item{
@@ -142,7 +142,7 @@
 
     .carousel-section{
         background: white;
-        padding:10vh 0vw;
+        padding:3em 0em 2em 0em;
 
         .carousel-container{
             .carousel-item{
