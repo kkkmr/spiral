@@ -150,11 +150,17 @@
                 height: 7em;
             }
         }
+
+        
     }
 
     .footer-section{
         font-size: 12px;
         line-height: 22px;
         padding: 2em 1em;
+
+        .video-logo{
+            top:-50%;
+        }
     }
 }

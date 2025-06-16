@@ -453,5 +453,16 @@ body {
     display: flex;
     justify-content: space-between;
     padding:5vh 8vw;
+    position: relative;
+
+    .video-logo{
+        position: absolute;
+        left:83vw;
+        top:-50%;
+        z-index: 5;
+        .video-logo-img{
+            width: 100%;
+        }
+    }
 }
 
