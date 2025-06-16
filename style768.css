@@ -39,7 +39,7 @@
                 height: unset;
 
                 .form-container{
-
+                    row-gap: 1.3em;
                     .input-submit{
                         width: 50%;
                         button{
@@ -56,7 +56,7 @@
                     /* Move label up when input is focused or has text */
                     input:focus + label,
                     input:valid + label {
-                        top: -20%;
+                        top: -25%;
                     }
                 }
             }
@@ -200,6 +200,14 @@
         .video-player{
             left:35vw;
             top:85%;
+        }
+
+        .video-container {
+            left:25vw;
+            top:125%;
+            video{
+                width: 50vw;
+            }
         }
     }
 

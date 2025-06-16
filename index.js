@@ -59,3 +59,21 @@ function updateCarousel() {
 
 // Initialize the active dot and button states
 updateCarousel();
+
+
+document.querySelector("form").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent default submission
+    window.location.href = "success.html?message=Form Submitted Successfully!";
+});
+
+document.querySelector(".play-img").addEventListener("click", function() {
+    const videoContainer = document.querySelector(".video-container");
+    const video = document.getElementById("videoPlayer");
+
+    videoContainer.style.display = "block"; // Show the video
+    video.play(); // Autoplay the video
+
+    video.addEventListener("ended", function() {
+        videoContainer.style.display = "none"; // Hide after completion
+    });
+});

@@ -47,6 +47,20 @@
                         
                     }
 
+                    .input-company{
+                        grid-row:3/ span 1;
+                        grid-column: 2/2;
+                        position: relative;
+
+                        label{
+                            background:#2e6b5c;
+                        }
+                        input:focus + label,
+                        input:valid + label {
+                            background:#2e6b5c;
+                        }
+                    }
+
                     .input-submit{
                         width: 100%;
                     }
@@ -178,7 +192,13 @@
             }
         }
 
-        
+        .video-container {
+            left:10vw;
+            top:125%;
+            video{
+                width: 80vw;
+            }
+        }
     }
 
     .footer-section{
