@@ -239,7 +239,7 @@ body {
 
 .organize-section{
 
-    padding:5vh 8vw;
+    padding:1em 8vw 4em 8vw;
 
     .organize-title{
         display: flex;
