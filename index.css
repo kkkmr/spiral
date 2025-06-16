@@ -452,7 +452,7 @@ body {
     line-height: 1.75em;
     display: flex;
     justify-content: space-between;
-    padding:5vh 8vw;
+    padding:3em 8vw;
     position: relative;
 
     .video-logo{
